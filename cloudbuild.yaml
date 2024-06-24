@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['functions', 'deploy', 'function-dev', 
+  args: ['functions', 'deploy', 'pubsub_to_bigquery', 
   '--source=.', 
   '--gen2',
   '--runtime', 'python312', 
