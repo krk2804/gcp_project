@@ -1,12 +1,12 @@
 steps:
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
   args: ['functions', 'deploy', 'function-dev', 
   '--source=.', 
   '--gen2',
   '--runtime', 'python312', 
   '--region', 'us-central1', 
   '--trigger-topic', 'activities', 
-  '--entry-point', 'function-dev', 
   '--timeout', '60s',
   '--max-instances', '10',
   '--memory', '256MB']
