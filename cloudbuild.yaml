@@ -2,13 +2,13 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'function-dev', 
   '--source=.', 
-  '--gen2'
+  '--gen2',
   '--runtime', 'python312', 
   '--region', 'us-central1', 
   '--trigger-topic', 'activities', 
   '--entry-point', 'function-dev', 
-  '--timeout', '60s'
-  '--max-instances', '10'
+  '--timeout', '60s',
+  '--max-instances', '10',
   '--memory', '128MB']
 options:
   logging: CLOUD_LOGGING_ONLY
