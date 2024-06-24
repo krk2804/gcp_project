@@ -1,2 +1,0 @@
-# Function dependencies
-google-cloud-bigquery
