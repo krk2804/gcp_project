@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'function-dev', '--source=.']
+  args: ['functions', 'deploy', 'function-dev', '--source=.', '--runtime=python312', '--region=us-central1', '--trigger-topic=activities', '--entry-point=function-dev']
 options:
   logging: CLOUD_LOGGING_ONLY
