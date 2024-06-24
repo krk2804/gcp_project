@@ -8,6 +8,7 @@ steps:
   '--trigger-topic', 'activities', 
   '--entry-point', 'function-dev', 
   '--timeout', '60s'
-  '--max-instances', '10']
+  '--max-instances', '10'
+  '--memory', '128MB']
 options:
   logging: CLOUD_LOGGING_ONLY
