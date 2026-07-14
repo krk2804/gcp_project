@@ -1,2 +1,2 @@
-# Function dependencies
+# Function dependencies needed in the project
 google-cloud-bigquery
