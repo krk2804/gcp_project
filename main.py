@@ -1,4 +1,4 @@
-# Project PLUTO Starter Code example for testing
+# Project PLUTO Starter Code example for testing and also for future project
 # Assumes a dataset called activities exists
 # Assumes a table call resources
 # resources schema - single column:  message:string
